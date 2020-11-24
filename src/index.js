@@ -1,5 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App/App';
+import ReduxApp from './redux/App/App';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <div>
+    <ReduxApp />
+  </div>,
+  document.getElementById('root')
+);
