@@ -9,6 +9,10 @@ const Hello = () => {
       <button type="button" onClick={() => userActions.setName('new name')}>
         set name
       </button>
+      <button type="button" onClick={userActions.getAsyncName}>
+        async set name
+      </button>
+      <p>Hello World {userState.asyncName}</p>
       <p>Hello World {userState.name}</p>
     </div>
   );
